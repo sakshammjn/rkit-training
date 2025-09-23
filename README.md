@@ -26,7 +26,7 @@ The program is organized week-wise as follows:
 
 ## 🗂 Repository Structure
 
-The repository is organized **week-wise** for easy navigation: 
+The repository is organized **week-wise** for easy navigation
 
 ---
 
