@@ -1,8 +1,5 @@
 # RKIT Pre-Joining Training Repository
 
-
----
-
 ## 📚 Training Curriculum
 
 The program is organized week-wise as follows:
