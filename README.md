@@ -1,8 +1,5 @@
 # RKIT Pre-Joining Training Repository
 
-This repository is a **personal record of my pre-joining training journey** at RKIT. It includes all my **study materials, practice exercises, and assignments** completed during the program.  
-
-The repository is designed to **track my progress week by week** and provide a structured reference for all the topics covered before officially joining the company.
 
 ---
 
