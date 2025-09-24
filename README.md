@@ -13,7 +13,6 @@ The program is organized week-wise as follows:
 | Week 12    | Agile & Soft Skills                           |
 | Week 12    | Problem Solving & AI-Assisted Development    |
 
----
 
 ## 🗂 Repository Structure
 
