@@ -19,7 +19,3 @@ The program is organized week-wise as follows:
 The repository is organized **week-wise** for easy navigation
 
 ---
-
-## ⚡ Purpose
-
-This repository serves as a **centralized reference** for my learning journey and can be used for **reviewing concepts, revising topics, or preparing for practical tasks** during my onboarding at RKIT.
