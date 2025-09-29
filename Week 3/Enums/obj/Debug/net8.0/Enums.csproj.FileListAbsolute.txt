@@ -1,0 +1,14 @@
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/bin/Debug/net8.0/Enums
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/bin/Debug/net8.0/Enums.deps.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/bin/Debug/net8.0/Enums.runtimeconfig.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/bin/Debug/net8.0/Enums.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/bin/Debug/net8.0/Enums.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/Enums.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/Enums.AssemblyInfoInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/Enums.AssemblyInfo.cs
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/Enums.csproj.CoreCompileInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/Enums.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/refint/Enums.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/Enums.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/Enums.genruntimeconfig.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Enums/obj/Debug/net8.0/ref/Enums.dll

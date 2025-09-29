@@ -1,0 +1,14 @@
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/bin/Debug/net8.0/AccessModifiers
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/bin/Debug/net8.0/AccessModifiers.deps.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/bin/Debug/net8.0/AccessModifiers.runtimeconfig.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/bin/Debug/net8.0/AccessModifiers.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/bin/Debug/net8.0/AccessModifiers.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/AccessModifiers.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/AccessModifiers.AssemblyInfoInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/AccessModifiers.AssemblyInfo.cs
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/AccessModifiers.csproj.CoreCompileInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/AccessModifiers.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/refint/AccessModifiers.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/AccessModifiers.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/AccessModifiers.genruntimeconfig.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/AccessModifiers/obj/Debug/net8.0/ref/AccessModifiers.dll

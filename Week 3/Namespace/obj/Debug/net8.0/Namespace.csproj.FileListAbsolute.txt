@@ -1,0 +1,14 @@
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/Namespace.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/Namespace.AssemblyInfoInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/Namespace.AssemblyInfo.cs
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/Namespace.csproj.CoreCompileInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/bin/Debug/net8.0/Namespace
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/bin/Debug/net8.0/Namespace.deps.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/bin/Debug/net8.0/Namespace.runtimeconfig.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/bin/Debug/net8.0/Namespace.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/bin/Debug/net8.0/Namespace.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/Namespace.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/refint/Namespace.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/Namespace.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/Namespace.genruntimeconfig.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Namespace/obj/Debug/net8.0/ref/Namespace.dll
