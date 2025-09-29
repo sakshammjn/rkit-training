@@ -1,0 +1,14 @@
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/Datatable.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/Datatable.AssemblyInfoInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/Datatable.AssemblyInfo.cs
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/Datatable.csproj.CoreCompileInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/bin/Debug/net8.0/Datatable
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/bin/Debug/net8.0/Datatable.deps.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/bin/Debug/net8.0/Datatable.runtimeconfig.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/bin/Debug/net8.0/Datatable.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/bin/Debug/net8.0/Datatable.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/Datatable.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/refint/Datatable.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/Datatable.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/Datatable.genruntimeconfig.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/Datatable/obj/Debug/net8.0/ref/Datatable.dll

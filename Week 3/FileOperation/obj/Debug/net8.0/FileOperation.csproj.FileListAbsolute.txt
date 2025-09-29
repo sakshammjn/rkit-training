@@ -1,0 +1,14 @@
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/bin/Debug/net8.0/FileOperation
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/bin/Debug/net8.0/FileOperation.deps.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/bin/Debug/net8.0/FileOperation.runtimeconfig.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/bin/Debug/net8.0/FileOperation.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/bin/Debug/net8.0/FileOperation.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/FileOperation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/FileOperation.AssemblyInfoInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/FileOperation.AssemblyInfo.cs
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/FileOperation.csproj.CoreCompileInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/FileOperation.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/refint/FileOperation.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/FileOperation.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/FileOperation.genruntimeconfig.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/FileOperation/obj/Debug/net8.0/ref/FileOperation.dll

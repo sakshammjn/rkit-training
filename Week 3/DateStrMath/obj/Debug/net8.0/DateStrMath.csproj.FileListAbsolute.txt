@@ -1,0 +1,14 @@
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/bin/Debug/net8.0/DateStrMath
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/bin/Debug/net8.0/DateStrMath.deps.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/bin/Debug/net8.0/DateStrMath.runtimeconfig.json
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/bin/Debug/net8.0/DateStrMath.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/bin/Debug/net8.0/DateStrMath.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/DateStrMath.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/DateStrMath.AssemblyInfoInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/DateStrMath.AssemblyInfo.cs
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/DateStrMath.csproj.CoreCompileInputs.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/DateStrMath.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/refint/DateStrMath.dll
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/DateStrMath.pdb
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/DateStrMath.genruntimeconfig.cache
+/Users/sakshammjn/Desktop/RKIT/Week 3/DateStrMath/obj/Debug/net8.0/ref/DateStrMath.dll
