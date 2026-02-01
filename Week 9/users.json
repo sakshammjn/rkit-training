@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Saksham Mahajan",
+      "email": "saksham@gmail.com",
+      "role": "Student",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Amit Sharma",
+      "email": "amit@gmail.com",
+      "role": "Developer",
+      "active": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    button {
+      padding: 8px 12px;
+      margin: 5px 0;
+      display: block;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>JSON Serialize / Deserialize Demo</h2>
+
+  Serialization: Converting a JavaScript object into a JSON string so it can be sent or stored.
+  <br>
+  Deserialization: Converting a JSON string back into a JavaScript object so it can be used in code.
+
+  <button id="serializeBtn">Serialize Object</button>
+  <button id="deserializeBtn">Deserialize String</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    // Original JavaScript object
+    let userObject = {
+      id: 1,
+      name: "Saksham",
+      email: "saksham@gmail.com"
+    };
+
+    // Will store JSON string here
+    let jsonString = "";
+
+
+    //serialize 
+    $("#serializeBtn").click(function () {
+      jsonString = JSON.stringify(userObject);
+
+      console.log("Serialized JSON string:", jsonString);
+      $("#output").text(jsonString);
+    });
+
+
+    //deserialize
+    $("#deserializeBtn").click(function () {
+      if (!jsonString) {
+        $("#output").text("Serialize first!");
+        return;
+      }
+
+      let parsedObject = JSON.parse(jsonString);
+
+      console.log("Deserialized JS object:", parsedObject);
+      $("#output").text(JSON.stringify(parsedObject, null, 3));
+    });
+  </script>
+
+</body>
+</html>

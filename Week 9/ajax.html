@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX + Deferred + Promise Demo</title>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    button {
+      padding: 8px 12px;
+    }
+    #status {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>AJAX + Promise + Deferred Demo</h2>
+
+  <button id="loadBtn">Load User Data</button>
+
+  <p id="status"></p>
+  <pre id="output"></pre>
+
+  <script>
+    $("#loadBtn").click(function () {
+
+      $("#status").text("Loading...");
+      $("#output").text("");
+
+      $.ajax({
+        url: "user.json"
+      })
+
+      .done(function (data) {
+        $("#status").text("Data loaded successfully");
+        $("#output").text(JSON.stringify(data, null, 2));
+      })
+
+      .fail(function () {
+        $("#status").text("Failed to load data");
+      })
+
+      
+      .always(function () {
+        console.log("AJAX request finished");
+      });
+
+    });
+
+
+
+    function fakeAsyncTask() {
+      let deferred = $.Deferred();
+
+      setTimeout(function () {
+        deferred.resolve("Deferred task completed");
+      }, 3000);
+
+      return deferred.promise();
+    }
+
+    fakeAsyncTask().done(function (msg) {
+      console.log(msg);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX HTTP Methods Demo</title>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    button {
+      margin: 5px 0;
+      padding: 8px 12px;
+      display: block;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>AJAX HTTP Methods Demo</h2>
+
+  <button id="getBtn">GET User</button>
+  <button id="postBtn">POST User</button>
+  <button id="putBtn">PUT Update User</button>
+  <button id="deleteBtn">DELETE User</button>
+
+  <p id="status"></p>
+  <pre id="output"></pre>
+
+  <script>
+    function showResult(status, data) {
+      $("#status").text(status);
+      $("#output").text(JSON.stringify(data, null, 2));
+    }
+
+    /* ===============================
+       GET – READ DATA
+    =============================== */
+    $("#getBtn").click(function () {
+      $.ajax({
+        url: "https://jsonplaceholder.typicode.com/users",
+        method: "GET"
+      })
+      .done(function (data) {
+        showResult("GET success", data);
+      })
+      .fail(function () {
+        $("#status").text("GET failed");
+      });
+    });
+
+
+
+    $("#postBtn").click(function () {
+      $.ajax({
+        url: "https://jsonplaceholder.typicode.com/users",
+        method: "POST",
+        data: {
+          name: "Saksham",
+          email: "saksham@gmail.com"
+        }
+      })
+      .done(function (data) {
+        showResult("POST success (User created)", data);
+      });
+    });
+
+
+
+    $("#putBtn").click(function () {
+      $.ajax({
+        url: "https://jsonplaceholder.typicode.com/users/10",
+        method: "PUT",
+        data: {
+          name: "Saksham Mahajan",
+          email: "newemail@gmail.com"
+        }
+      })
+      .done(function (data) {
+        showResult("PUT success (User updated)", data);
+      });
+    });
+
+    $("#deleteBtn").click(function () {
+      $.ajax({
+        url: "https://jsonplaceholder.typicode.com/users/1",
+        method: "DELETE"
+      })
+      .done(function () {
+        $("#status").text("DELETE success (User deleted)");
+        $("#output").text("");
+      });
+    });
+  </script>
+
+</body>
+</html>

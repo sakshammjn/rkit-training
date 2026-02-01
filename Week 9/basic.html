@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>jQuery Basics Demo</title>
+<style>
+    .highlight {
+      background-color: cyan;
+      border: 2px solid black;
+      
+    }
+  </style> 
+
+
+
+    <!-- // change the path in the office deskptop -->
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+  <h2 id="title">jQuery vs JavaScript Demo</h2>
+
+  <h3 id="title1">change by what...?</h3>
+
+  <button id="changeJS">by js</button>
+  <button id="changeJQ">by jq</button>
+
+    
+  <div>
+    <p class="text">Paragraph One</p>
+    <p class="text">Paragraph Two</p>
+
+    <button id="keeppara">keep para 1 and 2?</button>
+
+  </div>
+  
+  <div id="container">
+    <p>Paragraph inside div</p>
+  </div>
+
+  <input type="text" placeholder="Text input">
+  <input type="password" placeholder="Password input">
+
+  <button id="jsBtn">JavaScript Button</button>
+  <button id="jqBtn">jQuery Button</button>
+
+  <div id="box" style="width:200px; padding:20px; background:lightblue;">
+  I am a box
+</div>
+
+<button id="animate">Animate</button>
+
+  <script>
+    
+
+    // JavaScript way
+    document.getElementById("jsBtn").addEventListener("click", function () {
+      console.log("Handled using JavaScript");
+    });
+
+    // jQuery way
+    $("#jqBtn").click(function () {
+      console.log("Handled using jQuery");
+    });
+
+    
+
+
+
+    // JavaScript
+    document.getElementById("changeJS").addEventListener("click", function () {
+      document.getElementById("title1").innerHTML = "changed by JavaScript";
+    });
+
+    // jQuery
+    $("#changeJQ").click(function () {
+      $("#title1").html("changed by jQuery");
+    });
+
+
+
+
+
+
+
+
+
+    // document.getElementById("container").style.color = "red";
+    // document.getElementById("container").style.backgroundColor = "lightgray";
+    // this is also the example of inline css 
+
+    $("#container").css({
+      color: "blue",
+      
+    });
+
+
+
+
+
+    // ID selector
+    $("#container").addClass("highlight");
+
+  
+
+
+    // adds css to passwrord input
+    $("input[type='password']").css({
+        backgroundColor: "lightyellow",
+        border: "1px solid orange",
+        });
+    
+
+
+    $("#keeppara").click(function() {
+        $(".text").toggle(); 
+        $("#keeppara").text(function(i, text){
+            return text === "keep para 1 and 2?" ? "show para 1 and 2?" : "keep para 1 and 2?";
+        });
+    })
+
+
+    // // jQuery utility methods
+    // $(".text").hide();     
+    //$(".text").show();     
+    // $(".text").toggle();  
+
+
+
+
+   
+    let jsElement = document.getElementById("container");
+    let jqElement = $("#container");
+
+    // jsElement.hide(); //not even valid 
+    jqElement.show(); //valid
+
+
+    //jquery chaining eg
+       $("#animate").click(function () {
+    $("#box")
+      .css("backgroundColor", "orange") // change style
+      .fadeOut(500)                     // hide
+      .fadeIn(500)                      // show
+      .addClass("highlight")            // add class
+      .text("Animation complete");      // change text
+  });
+
+  </script>
+
+</body>
+</html>

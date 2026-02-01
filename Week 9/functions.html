@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Utility Functions Demo</title>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+
+  output in console
+
+  <script>
+    let numbers = [1, 2, 3, 4];
+    let users = [
+      { name: "Amit", active: true },
+      { name: "Ravi", active: false }
+    ];
+
+
+    
+    let doubled = $.map(numbers, function (n) {
+      return n * 2;
+    });
+    console.log("map:", doubled);
+
+    let names = $.map(users, u=>u.name);
+    console.log("only names of rhe users: ", names);
+
+
+
+    let activeUsers = $.grep(users, function (u) {
+      return u.active;
+    });
+    console.log("grep:", activeUsers);
+
+    
+
+    //extends overwites key
+    let defaults = { theme: "light", lang: "en" };
+    let settings = { lang: "fr" };
+
+    let finalSettings = $.extend({}, defaults, settings);
+    console.log("extend:", finalSettings);
+
+
+    
+    console.log("each:");
+    $.each(numbers, function (index, value) {
+      console.log(index, value);
+    });
+
+    
+
+    let a = [1, 2];
+    let b = [2, 4];
+    $.merge(a, b);
+    console.log("merge:", a);
+
+    
+    let index = $.inArray(3, numbers);
+    console.log("inArray:", index);
+
+
+
+
+
+    let text = "   saksham m   ";
+    console.log("trim:", text.trim());
+
+   
+  </script>
+
+</body>
+</html>

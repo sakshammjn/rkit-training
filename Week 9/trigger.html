@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programmatic Event Firing Demo</title>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+      transition: background-color 0.5s;
+    }
+
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+    }
+
+    button {
+      margin: 5px 0;
+      padding: 8px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Programmatic Event Firing Demo</h2>
+
+
+  <input type="text" id="name" placeholder="Enter name">
+  <input type="text" id="email" placeholder="Enter number">
+
+  <button id="saveBtn">Save Form</button>
+  <button id="bgBtn">Make Screen red</button>
+
+  <p id="status"></p>
+
+  <script>
+    let inactivityTimer;
+
+    //simple save button logic if button is clicked manually or programmatically
+    $("#saveBtn").click(function () {
+      $("#status").text("Form saved at " + new Date().toLocaleTimeString());
+      console.log("Form saved");
+    });
+
+    //will run if there is any input in any input tag
+    $("input").on("input", function () {
+        let name = $("#name").val().trim();
+        let email = $("#email").val().trim();
+
+        if (name.length >= 5 && email.length >= 5) {
+            //programmatic event firing
+            $("#saveBtn").trigger("click");
+        }
+    });
+
+    //to save manially by ctrl+s or cmd+s
+    $(document).keydown(function (e) {
+      if (e.metaKey && e.key === "s") {
+        e.preventDefault(); 
+
+        $("#saveBtn").trigger("click");
+      }
+    });
+
+
+
+
+
+    //change background color to red when button is clicked manually or programmatically
+    $("#bgBtn").click(function () {
+      $("body").css("background-color", "red");
+    });
+
+    function resetInactivityTimer() {
+        //clear the last running timer
+      clearTimeout(inactivityTimer);
+
+      inactivityTimer = setTimeout(function () {
+        $("#bgBtn").trigger("click"); 
+      }, 10000);
+    }
+
+    // detect user activity-every action resets the timer
+    $(document).on("mousemove keydown click dbclick", function () {
+      resetInactivityTimer();
+    });
+
+
+    //start timer when page loads for the dirst time
+    resetInactivityTimer(); 
+  </script>
+
+</body>
+</html>

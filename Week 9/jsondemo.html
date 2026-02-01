@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Working with JSON in jQuery</title>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    button {
+      padding: 8px 12px;
+      margin-bottom: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background: #f4f4f4;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Working with JSON Data (jQuery)</h2>
+
+  <button id="loadBtn">Load Users</button>
+  <button id="filterBtn">Show Active Users</button>
+  <button id="updateBtn">Update First User (Local)</button>
+
+  <p id="status"></p>
+
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    let usersData = [];
+
+
+
+    function renderTable(users) {
+      let rows = "";
+
+      $.each(users, function (index, user) {
+        rows += `
+          <tr>
+            <td>${user.id}</td>
+            <td>${user.name}</td>
+            <td>${user.email}</td>
+            <td>${user.role}</td>
+            <td>${user.active ? "Active" : "Inactive"}</td>
+          </tr>
+        `;
+      });
+
+      $("#userTable tbody").html(rows);
+    }
+    
+    
+
+    $("#loadBtn").click(function () {
+      $.ajax({
+        url: "users.json"
+      })
+      .done(function (data) {
+        usersData = data.users;
+        $("#status").text("Users loaded successfully");
+        renderTable(usersData);
+      })
+      .fail(function () {
+        $("#status").text("Failed to load JSON");
+      });
+    });
+
+    
+
+
+    $("#filterBtn").click(function () {
+      let activeUsers = $.grep(usersData, function (user) {
+        return user.active;
+      });
+
+      $("#status").text("Showing active users only");
+      renderTable(activeUsers);
+    });
+
+
+
+
+    $("#updateBtn").click(function () {
+      if (usersData.length > 0) {
+        usersData[0].name = "Updated Saksham";
+        usersData[0].role = "Frontend Developer";
+
+        $("#status").text("First user updated locally");
+        renderTable(usersData);
+      }
+    });
+  </script>
+
+</body>
+</html>

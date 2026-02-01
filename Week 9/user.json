@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "name": "Saksham Mahajan",
+  "username": "saksham.m",
+  "email": "saksham@gmail.com",
+  "phone": "9876543210",
+  "address": {
+    "street": "station plot",
+    "city": "rajkot",
+    "zipcode": "380005"
+  },
+  "company": {
+    "name": "rkit",
+    "role": "developer"
+  },
+  "active": true
+}

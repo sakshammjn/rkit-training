@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Regex Basics Demo</title>
+
+
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+
+
+  <style>
+
+    input {
+      display: block;
+      margin: 8px 0;
+      padding: 6px;
+    }
+
+
+
+    button {
+      margin-top: 10px;
+      padding: 6px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Regex Validation Demo</h3>
+
+  <input type="text" id="username" placeholder="Username (letters, min 5)">
+  <input type="text" id="email" placeholder="Email">
+  <input type="text" id="phone" placeholder="Phone (10 digits)">
+  <input type="text" id="password" placeholder="Password (letters & numbers, min 8)">
+
+  <button id="check">Validate</button>
+
+  <p id="result"></p>
+
+  <script>
+    $("#check").click(function () {
+      let username = $("#username").val().trim();
+      let email = $("#email").val().trim();
+      let phone = $("#phone").val().trim();
+      let password = $("#password").val().trim();
+
+    
+
+      // letters only, minimum 5, max is anything
+      let usernameRegex = /^[a-zA-Z0-9]{5,}$/;
+
+      // basic email
+      let emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z]+.[a-zA-Z]+$/;
+
+      // exactly 10 digits
+      let phoneRegex = /^[0-9]{10}$/;
+
+      // atleast 1 small, lalrge, number
+      let passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[a-zA-Z0-9@$!%*?&]{8,}$/;
+
+      // validation checks using test whihc is an inbuilt method to verify
+
+       let isValid = usernameRegex.test(username) && emailRegex.test(email) && phoneRegex.test(phone) && passwordRegex.test(password);
+
+      if (isValid) {
+        $("#result").text("All inputs are VALID");
+      } 
+      else {
+        $("#result").text("Some inputs are INVALID");
+      }
+
+
+      console.log("Username valid:", usernameRegex.test(username));
+      console.log("Email valid:", emailRegex.test(email));
+      console.log("Phone valid:", phoneRegex.test(phone));
+      console.log("Password valid:", passwordRegex.test(password));
+    });
+  </script>
+
+</body>
+</html>
